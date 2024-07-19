@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mobile Dealer{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'mobile/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Mobile Dealer</h1>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'add_mobile' %}">Add Mobile</a>
+            <a href="{% url 'buy_mobile' %}">Buy Mobile</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

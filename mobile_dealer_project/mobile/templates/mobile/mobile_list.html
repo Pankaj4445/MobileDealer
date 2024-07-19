@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Mobile List{% endblock %}
+
+{% block content %}
+<h1>Mobile List</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>RAM</th>
+            <th>ROM</th>
+            <th>Battery</th>
+            <th>OS</th>
+            <th>Network</th>
+            <th>Primary Camera</th>
+            <th>Secondary Camera</th>
+            <th>Processor</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for mobile in mobiles %}
+        <tr>
+            <td>{{ mobile.name }}</td>
+            <td>{{ mobile.brand }}</td>
+            <td>{{ mobile.price }}</td>
+            <td>{{ mobile.RAM }}</td>
+            <td>{{ mobile.ROM }}</td>
+            <td>{{ mobile.battery }}</td>
+            <td>{{ mobile.OS }}</td>
+            <td>{{ mobile.network }}</td>
+            <td>{{ mobile.primary_cam }}</td>
+            <td>{{ mobile.secondary_cam }}</td>
+            <td>{{ mobile.processor }}</td>
+            <td>{{ mobile.quantity }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<a href="{% url 'add_mobile' %}">Add Mobile</a>
+<a href="{% url 'buy_mobile' %}">Buy Mobile</a>
+{% endblock %}

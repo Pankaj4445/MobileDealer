@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Purchase Success</title>
+    <link rel="stylesheet" href="{% static 'mobile/styles.css' %}">
+</head>
+<body>
+    <h1>Purchase Success</h1>
+    <p>You bought {{ quantity }} {{ mobile.brand }} {{ mobile.name }} for {{ mobile.price * quantity }}</p>
+    <a href="{% url 'mobile_list' %}">Back to Mobile List</a>
+</body>
+</html>

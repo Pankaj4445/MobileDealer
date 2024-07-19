@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Mobile{% endblock %}
+
+{% block content %}
+<h1>Add Mobile</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <div class="form-table">
+        <div class="form-row">
+            <label for="id_name">Name</label>
+            <div>{{ form.name }}</div>
+        </div>
+        <div class="form-row">
+            <label for="id_brand">Brand</label>
+            <div>{{ form.brand }}</div>
+        </div>
+        <div class="form-row">
+            <label for="id_price">Price</label>
+            <div>{{ form.price }}</div>
+        </div>
+        <div class="form-row">
+            <label for="id_RAM">RAM</label>
+            <div>{{ form.RAM }}</div>
+        </div>
+        <div class="form-row">
+            <label for="id_ROM">ROM</label>
+            <div>{{ form.ROM }}</div>
+        </div>
+        <div class="form-row">
+            <label for="id_battery">Battery</label>
+            <div>{{ form.battery }}</div>
+        </div>
+        <div class="form-row">
+            <label for="id_OS">OS</label>
+            <div>{{ form.OS }}</div>
+        </div>
+        <div class="form-row">
+            <label for="id_network">Network</label>
+            <div>{{ form.network }}</div>
+        </div>
+        <div class="form-row">
+            <label for="id_primary_cam">Primary Camera</label>
+            <div>{{ form.primary_cam }}</div>
+        </div>
+        <div class="form-row">
+            <label for="id_secondary_cam">Secondary Camera</label>
+            <div>{{ form.secondary_cam }}</div>
+        </div>
+        <div class="form-row">
+            <label for="id_processor">Processor</label>
+            <div>{{ form.processor }}</div>
+        </div>
+        <div class="form-row">
+            <label for="id_quantity">Quantity</label>
+            <div>{{ form.quantity }}</div>
+        </div>
+    </div>
+    <button type="submit">Add Mobile</button>
+</form>
+
+<a href="{% url 'mobile_list' %}">Back to Mobile List</a>
+{% endblock %}

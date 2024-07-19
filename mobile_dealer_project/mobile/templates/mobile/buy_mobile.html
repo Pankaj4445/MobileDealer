@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buy Mobile</title>
+    <link rel="stylesheet" href="{% static 'mobile/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Mobile Dealer</h1>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'add_mobile' %}">Add Mobile</a>
+            <a href="{% url 'buy_mobile' %}">Buy Mobile</a>
+        </nav>
+    </header>
+    <h1>Buy Mobile</h1>
+
+    <div class="mobile-cards-container">
+        {% for mobile in mobiles %}
+            <div class="mobile-card">
+                <h2>{{ mobile.name }}</h2>
+                <p><strong>Brand:</strong> {{ mobile.brand }}</p>
+                <p><strong>Price:</strong> ${{ mobile.price }}</p>
+                <p><strong>Quantity:</strong> {{ mobile.total_quantity }}</p>
+                <form method="post" action="{% url 'buy_mobile' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="mobile_name" value="{{ mobile.name }}">
+                    <input type="hidden" name="mobile_brand" value="{{ mobile.brand }}">
+                    <input type="hidden" name="mobile_price" value="{{ mobile.price }}">
+                    <button type="submit">Buy Now</button>
+                </form>
+            </div>
+        {% endfor %}
+    </div>
+
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+    {% if success %}
+        <div id="success-popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <p>{{ success }}</p>
+                <img src="{% static 'mobile/0005.gif' %}" alt="Celebration" class="celebration-gif">
+            </div>
+        </div>
+    {% endif %}
+
+    <script>
+        function closePopup() {
+            document.getElementById('success-popup').style.display = 'none';
+        }
+
+        window.onload = function() {
+            {% if success %}
+                document.getElementById('success-popup').style.display = 'block';
+            {% endif %}
+        }
+    </script>
+</body>
+</html>

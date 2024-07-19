@@ -1,0 +1,415 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Spacing between links */
+    font-size: 1.1em;
+    transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+
+nav a:hover {
+    color: #ffeb3b; /* Yellow color on hover */
+}
+
+nav a:active {
+    color: #ffeb3b; /* Yellow color on active state */
+}
+
+nav a:focus {
+    color: #ffeb3b; /* Yellow color on focus state */
+}
+
+
+form {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* static/mobile/styles.css */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+form table th {
+    text-align: right;
+}
+
+form table td {
+    text-align: left;
+}
+
+button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+/* static/mobile/styles.css */
+
+.form-table {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black; /* Default border */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    flex: 1 1 200px; /* Adjust 200px based on your preference */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+/* Different border styles for cloned forms */
+#formsContainer .form-table {
+    border: 2px dashed #ff0000;
+}
+/* static/mobile/styles.css */
+
+.form-table {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black; /* Default border */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.form-table.new-form {
+    border: 2px dashed #ff0000; /* Different border for cloned forms */
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    flex: 1 1 200px; /* Adjust based on your preference */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+/* static/mobile/styles.css */
+
+/* static/mobile/styles.css */
+
+.form-table {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    flex: 1 1 200px; /* Adjust 200px based on your preference */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/* Container for mobile cards */
+.mobile-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Individual card styling */
+.mobile-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mobile-card h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.mobile-card p {
+    margin: 10px 0;
+}
+
+.mobile-card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mobile-card button:hover {
+    background-color: #0056b3;
+}
+
+.mobile-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Popup styling */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close-btn {
+    color: #aaa;
+    align-self: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.celebration-gif {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
